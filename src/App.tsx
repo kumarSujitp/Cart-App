@@ -7,18 +7,30 @@ import { products } from './assets/constants/constants'
 function App() {
   return (
     <>
-      <header className="header">
-        <h1>My Shopping Store</h1> 
-        {/* <div className="cart-count">Cart ({totalItems})</div> */}
-        {/* {/* <div className="cart-count">Cart</div> */}
-      </header>
+      <div className="container-fluid">
+        {/* <header className="header">
+          <h1>My Shopping Store</h1>
+        </header> */}
 
-      <h2>Products</h2>
+        <header
+          className="header"
+          style={{
+            display: 'block',
+            backgroundColor: 'lightblue',
+            padding: '20px',
+            color: 'black',
+          }}
+        >
+          <h1>My Shopping Store</h1>
+        </header>
 
-      <ProductList
-        product={products}
-      // onAddToCart={addToCart}
-      />
+        <h2>Products</h2>
+
+        <ProductList
+          product={products}
+        />
+      </div>
+
     </>
   )
 }
